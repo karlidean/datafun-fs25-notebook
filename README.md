@@ -1,6 +1,8 @@
 # redesigned-giggle
 This is an example repo for me to duplicate for my future projects.
 
+# Creating the Project Foundation
+
 ## Create a Repository in Git
 1. Make sure the repository is PUBLIC
 2. Make sure there is a README.md file
