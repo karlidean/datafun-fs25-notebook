@@ -1,5 +1,6 @@
 # redesigned-giggle
-This is an example repo for me to duplicate for my future projects.
+This is a repo of Notes from "Intro to Python for Computer Science and Data Science"\
+- The book is by Harvey Dietel and Paul Dietel
 
 # Creating the Project Foundation
 
