@@ -6,5 +6,5 @@ This is a repo of Notes from "Intro to Python for Computer Science and Data Scie
 - You can find these repos on my GitHub Profile
 - All repos from this course have received full marks except for datafun-02-automation, which received a 16/20
 
-# Repository Directory
-Creating a new repo? `new_repo.md`
+# Repository Directory (Organized by Step)
+[Initializing a New Project?](https://github.com/karlidean/datafun-fs25-notebook/blob/main/new_repo.md)
