@@ -2,20 +2,22 @@
 
 ## Create a Repository in Git
 1. Make sure the repository is PUBLIC
-2. Make sure there is a README.md file
+2. Make sure there is a README.md file, we will add a `.gitignore` and `requirements.txt` later
 3. Save
 
 ## Cloning a Repository from Git to My Local Machine (Windows)
 1. In your repo, click the green "code" button
 2. Copy the code link
 3. Go to Powershell and use the following code
-4. `cd C:\Repos` This gets into your repo folder
-5. `git clone new repo link` This grabs the repo from Git and puts it into the repo folder
+```shell
+cd C:\Repos
+git clone (your URL you copied from GitHub)
+```
 
 ## Adding the Necessary Files for Your Project (`.gitignore` and `requirements.txt`)
 1. Open the repo we've just cloned in VS Code
 2. Click the "New File..." button
-   1. This is found in the "Explorer" Window on the left side, just to the right of the repo's name (ex. redesigned-giggle)
+   1. This is found in the "Explorer" Window on the left side, just to the right of the repo's name (ex. datafun-fs25-notebook)
 3. A text line should appear in the directory of your repo (Which is the "Explorer" Window). In this text line, type `.gitignore`
 4. Click the "New File..." button again
 5. In the new text line, type `requirements.txt`
@@ -23,25 +25,32 @@
    1. These are how you will get usable content and packages for your code!
 
 ## Add - Commit - Push: Getting the Work to GitHub
-1. Add all of our files and changes into the ship with `git add .`
-2. Commit to GitHub what we've done to change anything with `git commit -m "your message"`
-3. Push our changes to the remote repo on GitHub with `git push -u origin main`
-   1. When working on a longer project, we can shorten this to `git push` as long as we've used `git push -u origin main` first!
+1. Use the following code sequence to push your changes to GitHub
+```shell
+git add .
+git commit -m "your comment for the commit"
+git push -u origin main # After using this once, you can just do "git push"
+```
 
 ## Create the Virtual Environment (.venv)
-1. Create the Virtual Environment with `py -m venv .venv`
-2. Activate the Virtual Environment with `.\.venv\Scripts\activate`
+1. Create the Virtual Environment with the following code:
+```shell
+py -m venv .venv
+```
+2. Activate the Virtual Environment with the following code:
+```shell
+.\.venv\Scripts\activate # You may have to activate your environment each time you enter your repo in VS Code!
+```
 
 ## Add - Commit - Push: Getting the Virtual Environment to GitHub
-1. Add all of our files and changes into the ship with `git add .`
-2. Commit to GitHub what we've done to change anything with `git commit -m "your message"`
-3. Push our changes to the remote repo on GitHub with `git push -u origin main`
-   1. When working on a longer project, we can shorten this to `git push` as long as we've used `git push -u origin main` first!
-
-## Upon Re-Entry to the Repo to Make Edits:
-1. Activate the Virtual Environment with `.\.venv\Scripts\activate`
-   1. This allows us to work in the .venv, it needs reactivated upon re-entry.
+1. Use the same sequence from earlier to complete this.
 
 ## Installing Dependencies from Requirements
-1. Run `pip install -r requirements.txt`
-   1. This allows us to pull everything (numpy, pandas, matplotlib, pathlib) and install it so we can utilize it.
+1. Use the following code to upgrade the setuptools wheel:
+```shell
+pip install --upgrade setuptools wheel # You should check if this is upgraded each time you open the repo.
+```
+2. Use the following code to upgrade the `requirements.txt` file:
+```shell
+pip install --upgrade -r requirements.txt # You should check if this is upgraded each time you open the repo.
+```
